@@ -16,35 +16,59 @@
     <!-- Top Glow Effect -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[350px] bg-gradient-to-b from-emerald-500/10 via-transparent to-transparent blur-3xl pointer-events-none"></div>
 
+    <!-- Language Switcher Floating Button -->
+    <div class="fixed top-4 right-4 z-50 bg-slate-950/80 border border-slate-800 p-1 rounded-xl backdrop-blur-md flex gap-1 shadow-2xl">
+        <button id="btn-id" onclick="switchLang('id')" class="px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-emerald-500 text-slate-950">
+            ID
+        </button>
+        <button id="btn-en" onclick="switchLang('en')" class="px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-800 text-slate-400 hover:text-slate-200">
+            EN
+        </button>
+    </div>
+
     <!-- Header Section -->
     <header class="relative max-w-5xl mx-auto px-6 pt-20 pb-12 text-center">
         <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             Open Standard Financial Codification
         </div>
+        
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl mb-6">
             Almas Universal Codification
         </h1>
-        <p class="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        
+        <p class="lang-id text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
             Standar manifesto pencatatan keuangan instan <span class="text-emerald-400 font-semibold">local-first</span>. Memangkas seluruh batas birokrasi kategori konvensional menjadi satu ketukan huruf berbasis niat batiniah.
+        </p>
+        <p class="lang-en text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed hidden">
+            A <span class="text-emerald-400 font-semibold">local-first</span> instant financial logging standard manifesto. Streamlining all conventional categorical friction into a single, intent-based keystroke.
         </p>
     </header>
 
     <!-- Core Philosophy (Pisau Analisis) -->
     <main class="relative max-w-5xl mx-auto px-6 pb-32">
         <section class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-6 md:p-8 backdrop-blur-sm shadow-xl mb-16">
-            <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3">🪓 Pisau Analisis Almas</h2>
-            <p class="text-xl font-semibold text-white leading-snug mb-4">
-                "Asas Niat & Tujuan Fungsi"
-            </p>
-            <p class="text-slate-400 leading-relaxed text-sm md:text-base">
-                Sistem Taksonomi Almas tidak mengelompokkan pengeluaran berdasarkan wujud fisik barangnya, melainkan berdasarkan esensi niat (intent) dan tujuan fungsinya dalam roda kehidupan manusia. Sebuah objek yang sama dapat berpindah master amplop secara dinamis tergantung pada motif psikologis dan dampak biologisnya bagi rumah tangga.
-            </p>
+            <div class="lang-id">
+                <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3">🪓 Pisau Analisis Almas</h2>
+                <p class="text-xl font-semibold text-white leading-snug mb-4">"Asas Niat & Tujuan Fungsi"</p>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                    Sistem Taksonomi Almas tidak mengelompokkan pengeluaran berdasarkan wujud fisik barangnya, melainkan berdasarkan esensi niat (intent) dan tujuan fungsinya dalam roda kehidupan manusia. Sebuah objek yang sama dapat berpindah master amplop secara dinamis tergantung pada motif psikologis dan dampak biologisnya bagi rumah tangga[cite: 1].
+                </p>
+            </div>
+            <div class="lang-en hidden">
+                <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3">🪓 The Almas Analytical Knife</h2>
+                <p class="text-xl font-semibold text-white leading-snug mb-4">"Principle of Intent & Functional Purpose"</p>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                    The Almas Taxonomy System does not classify expenses based on the physical form of the goods, but rather on the core essence of intent and its functional purpose within the wheel of human life. The exact same object can dynamically shift between master envelopes depending on the psychological motif and biological impact on the household[cite: 1].
+                </p>
+            </div>
         </section>
 
         <!-- A-Z Complete Grid Grouped by Master Envelopes -->
         <h2 class="text-2xl font-bold text-white mb-8 border-b border-slate-800 pb-4 flex items-center gap-3">
-            <span>📑</span> Daftar Kodifikasi Lengkap Standar A-Z
+            <span>📑</span> 
+            <span class="lang-id">Daftar Kodifikasi Lengkap Standar A-Z</span>
+            <span class="lang-en hidden">Complete A-Z Standard Codification Directory</span>
         </h2>
 
         <div class="space-y-12">
@@ -52,40 +76,50 @@
             <!-- 1. Kebutuhan Pokok -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-rose-400 font-bold text-lg">
-                    <span>🟥</span> <h3>1. Master Amplop: Kebutuhan Pokok & Tagihan</h3>
+                    <span>🟥</span> 
+                    <h3 class="lang-id">1. Master Amplop: Kebutuhan Pokok & Tagihan</h3>
+                    <h3 class="lang-en hidden">1. Master Envelope: Essential Survival & Bills</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">m</span>
-                        <div><h4 class="font-bold text-white">Makan & Jajan</h4><p class="text-xs text-slate-400 mt-1">m1 (Makan Harian Primer), m2 (Jajan Impulsif & Kopi harian).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Makan & Jajan</h4><p class="text-xs text-slate-400 mt-1">m1 (Makan Harian Primer), m2 (Jajan Impulsif & Kopi harian)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Food & Snacks</h4><p class="text-xs text-slate-400 mt-1">m1 (Primary Daily Meals), m2 (Impulsive Snacks & Daily Coffee)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">d</span>
-                        <div><h4 class="font-bold text-white">Dapur & Sembako</h4><p class="text-xs text-slate-400 mt-1">d1 (Bahan Mentah/Pasar), d2 (Sanitasi Domestik & Kebutuhan Bayi).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Dapur & Sembako</h4><p class="text-xs text-slate-400 mt-1">d1 (Bahan Mentah/Pasar), d2 (Sanitasi Domestik & Kebutuhan Bayi)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Kitchen & Groceries</h4><p class="text-xs text-slate-400 mt-1">d1 (Raw Ingredients/Market), d2 (Domestic Sanitation & Baby Needs)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">b</span>
-                        <div><h4 class="font-bold text-white">Bensin & Transportasi</h4><p class="text-xs text-slate-400 mt-1">b1 (BBM Kendaraan & Parkir), b2 (Layanan Ojol/Transportasi Umum).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Bensin & Transportasi</h4><p class="text-xs text-slate-400 mt-1">b1 (BBM Kendaraan & Parkir), b2 (Layanan Ojol/Transportasi Umum)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Fuel & Transportation</h4><p class="text-xs text-slate-400 mt-1">b1 (Vehicle Fuel & Parking), b2 (Ride-sharing/Public Transit)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">r</span>
-                        <div><h4 class="font-bold text-white">Rumah & Tempat Tinggal</h4><p class="text-xs text-slate-400 mt-1">r1 (KPR/Uang Sewa Bulanan), r2 (Pemeliharaan Minor Alat Domestik).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Rumah & Tempat Tinggal</h4><p class="text-xs text-slate-400 mt-1">r1 (KPR/Uang Sewa Bulanan), r2 (Pemeliharaan Minor Alat Domestik)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Home & Living</h4><p class="text-xs text-slate-400 mt-1">r1 (Mortgage/Monthly Rent), r2 (Minor Domestic Appliance Maintenance)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">t</span>
-                        <div><h4 class="font-bold text-white">Tagihan & Utilitas</h4><p class="text-xs text-slate-400 mt-1">t1 (Tagihan Listrik/Token & PDAM), t2 (Paket Data, Pulsa, & WiFi Rumah).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Tagihan & Utilitas</h4><p class="text-xs text-slate-400 mt-1">t1 (Tagihan Listrik/Token & PDAM), t2 (Paket Data, Pulsa, & WiFi Rumah)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Bills & Utilities</h4><p class="text-xs text-slate-400 mt-1">t1 (Electricity Bill/Tokens & Water), t2 (Data Packages, Airtime, & Home WiFi)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">k</span>
-                        <div><h4 class="font-bold text-white">Kesehatan & Obat</h4><p class="text-xs text-slate-400 mt-1">k1 (Kuratif/Konsultasi & Tebus Obat), k2 (Preventif/Suplemen & Vitamin).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Kesehatan & Obat</h4><p class="text-xs text-slate-400 mt-1">k1 (Kuratif/Konsultasi & Tebus Obat), k2 (Preventif/Suplemen & Vitamin)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Health & Medicine</h4><p class="text-xs text-slate-400 mt-1">k1 (Curative/Consultations & Prescriptions), k2 (Preventive/Supplements & Vitamins)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">g</span>
-                        <div><h4 class="font-bold text-white">Grooming & Sandang Dasar</h4><p class="text-xs text-slate-400 mt-1">g1 (Potong Rambut & Skincare Medis), g2 (Pakaian Kerja & Seragam Wajib).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Grooming & Sandang Dasar</h4><p class="text-xs text-slate-400 mt-1">g1 (Potong Rambut & Skincare Medis), g2 (Pakaian Kerja & Seragam Wajib)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Grooming & Basic Apparel</h4><p class="text-xs text-slate-400 mt-1">g1 (Haircuts & Medical Skincare), g2 (Work Uniforms & Essential Clothing)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-rose-500/10 text-rose-400 border border-rose-500/20 text-xl px-4 py-2 rounded-lg h-fit">c</span>
-                        <div><h4 class="font-bold text-white">Cicilan Konsumer Pokok</h4><p class="text-xs text-slate-400 mt-1">c1 (Elektronik Domestik Produktif), c2 (Tagihan Pemenuhan Pokok Masa Lalu).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Cicilan Konsumer Pokok</h4><p class="text-xs text-slate-400 mt-1">c1 (Elektronik Domestik Produktif), c2 (Tagihan Pemenuhan Pokok Masa Lalu)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Basic Consumer Credit</h4><p class="text-xs text-slate-400 mt-1">c1 (Productive Domestic Electronics), c2 (Past Essential Needs Fulfillment Bills)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -93,12 +127,15 @@
             <!-- 2. Edukasi -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-amber-400 font-bold text-lg">
-                    <span>🟨</span> <h3>2. Master Amplop: Edukasi & Human Capital</h3>
+                    <span>🟨</span> 
+                    <h3 class="lang-id">2. Master Amplop: Edukasi & Human Capital</h3>
+                    <h3 class="lang-en hidden">2. Master Envelope: Education & Human Capital</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4 sm:col-span-2">
                         <span class="code-font bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xl px-4 py-2 rounded-lg h-fit">e</span>
-                        <div><h4 class="font-bold text-white">Edukasi & Sekolah</h4><p class="text-xs text-slate-400 mt-1">e1 (Pendidikan Formal, SPP, UKT Kampus), e2 (Bimbel Anak, Kursus Keahlian, & Buku).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Edukasi & Sekolah</h4><p class="text-xs text-slate-400 mt-1">e1 (Pendidikan Formal, SPP, UKT Kampus), e2 (Bimbel Anak, Kursus Keahlian, & Buku)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Education & Schooling</h4><p class="text-xs text-slate-400 mt-1">e1 (Formal Education, Tuition, Campus UKT), e2 (Children's Tutoring, Skill Courses, & Textbooks)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -106,24 +143,30 @@
             <!-- 3. Dana Terencana -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-orange-400 font-bold text-lg">
-                    <span>🟧</span> <h3>3. Master Amplop: Dana Terencana / Sinking Funds</h3>
+                    <span>🟧</span> 
+                    <h3 class="lang-id">3. Master Amplop: Dana Terencana / Sinking Funds</h3>
+                    <h3 class="lang-en hidden">3. Master Envelope: Planned Funds / Sinking Funds</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xl px-4 py-2 rounded-lg h-fit">p</span>
-                        <div><h4 class="font-bold text-white">Pajak & Legalitas</h4><p class="text-xs text-slate-400 mt-1">p1 (Pajak STNK Kendaraan Tahunan), p2 (PBB Properti & Biaya Dokumen/SIM).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Pajak & Legalitas</h4><p class="text-xs text-slate-400 mt-1">p1 (Pajak STNK Kendaraan Tahunan), p2 (PBB Properti & Biaya Dokumen/SIM)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Tax & Legality</h4><p class="text-xs text-slate-400 mt-1">p1 (Annual Vehicle Registration Tax), p2 (Property PBB & Document/ID/Passport Fees)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xl px-4 py-2 rounded-lg h-fit">a</span>
-                        <div><h4 class="font-bold text-white">Asuransi & Proteksi</h4><p class="text-xs text-slate-400 mt-1">a1 (Premi BPJS/Asuransi Kesehatan), a2 (Asuransi Jiwa & Proteksi Aset Jangka Panjang).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Asuransi & Proteksi</h4><p class="text-xs text-slate-400 mt-1">a1 (Premi BPJS/Asuransi Kesehatan), a2 (Asuransi Jiwa & Proteksi Aset Jangka Panjang)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Insurance & Protection</h4><p class="text-xs text-slate-400 mt-1">a1 (BPJS/Health Insurance Premiums), a2 (Life Insurance & Long-term Asset Protection)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xl px-4 py-2 rounded-lg h-fit">j</span>
-                        <div><h4 class="font-bold text-white">Jasa & Perbaikan Besar</h4><p class="text-xs text-slate-400 mt-1">j1 (Servis Besar Kendaraan/Ganti Ban), j2 (Renovasi Atap & Infrastruktur Rumah).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Jasa & Perbaikan Besar</h4><p class="text-xs text-slate-400 mt-1">j1 (Servis Besar Kendaraan/Ganti Ban), j2 (Renovasi Atap & Infrastruktur Rumah)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Services & Major Repairs</h4><p class="text-xs text-slate-400 mt-1">j1 (Major Vehicle Service/Tyre Replacement), j2 (Roof Repairs & Home Infrastructure Renovations)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xl px-4 py-2 rounded-lg h-fit">w</span>
-                        <div><h4 class="font-bold text-white">Wadah Elektronik & Gawai</h4><p class="text-xs text-slate-400 mt-1">w1 (Alokasi Dana Pergantian Gawai Utama/Laptop Habis Masa Pakai).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Wadah Elektronik & Gawai</h4><p class="text-xs text-slate-400 mt-1">w1 (Alokasi Dana Pergantian Gawai Utama/Laptop Habis Masa Pakai)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Electronic Buffer & Gadgets</h4><p class="text-xs text-slate-400 mt-1">w1 (Fund Allocation for Replacing Obsolete Core Gadgets/Laptops)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -131,12 +174,15 @@
             <!-- 4. Kebebasan Finansial -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-emerald-400 font-bold text-lg">
-                    <span>🟩</span> <h3>4. Master Amplop: Kebebasan Finansial / Investasi</h3>
+                    <span>🟩</span> 
+                    <h3 class="lang-id">4. Master Amplop: Kebebasan Finansial / Investasi</h3>
+                    <h3 class="lang-en hidden">4. Master Envelope: Financial Freedom / Investment</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4 sm:col-span-2">
                         <span class="code-font bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xl px-4 py-2 rounded-lg h-fit">i</span>
-                        <div><h4 class="font-bold text-white">Investasi & Aset</h4><p class="text-xs text-slate-400 mt-1">i1 (Aset Defensif: Emas & Deposito Syariah), i2 (Aset Pertumbuhan: Saham, Reksadana, & Modal Bisnis).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Investasi & Aset</h4><p class="text-xs text-slate-400 mt-1">i1 (Aset Defensif: Emas & Deposito Syariah), i2 (Aset Pertumbuhan: Saham, Reksadana, & Modal Bisnis)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Investment & Assets</h4><p class="text-xs text-slate-400 mt-1">i1 (Defensive Assets: Gold & Sharia Deposits), i2 (Growth Assets: Stocks, Mutual Funds, & Business Capital)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -144,24 +190,30 @@
             <!-- 5. Hiburan -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-sky-400 font-bold text-lg">
-                    <span>🟦</span> <h3>5. Master Amplop: Hiburan & Wants</h3>
+                    <span>🟦</span> 
+                    <h3 class="lang-id">5. Master Amplop: Hiburan & Wants</h3>
+                    <h3 class="lang-en hidden">5. Master Envelope: Entertainment & Wants</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xl px-4 py-2 rounded-lg h-fit">h</span>
-                        <div><h4 class="font-bold text-white">Hiburan & Healing</h4><p class="text-xs text-slate-400 mt-1">h1 (Bioskop, Konser & Berlangganan Streaming), h2 (Kuliner Restoran Akhir Pekan).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Hiburan & Healing</h4><p class="text-xs text-slate-400 mt-1">h1 (Bioskop, Konser & Berlangganan Streaming), h2 (Kuliner Restoran Akhir Pekan)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Entertainment & Leisure</h4><p class="text-xs text-slate-400 mt-1">h1 (Cinema, Concerts & Streaming Subscriptions), h2 (Weekend Restaurant Dining)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xl px-4 py-2 rounded-lg h-fit">o</span>
-                        <div><h4 class="font-bold text-white">Olahraga & Hobi</h4><p class="text-xs text-slate-400 mt-1">o1 (Sewa Lapangan Futsal/Badminton), o2 (Perlengkapan Hobi & Mainan).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Olahraga & Hobi</h4><p class="text-xs text-slate-400 mt-1">o1 (Sewa Lapangan Futsal/Badminton), o2 (Perlengkapan Hobi & Mainan)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Sports & Hobbies</h4><p class="text-xs text-slate-400 mt-1">o1 (Futsal/Badminton Field Rentals), o2 (Hobby Gear & Collectibles/Toys)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xl px-4 py-2 rounded-lg h-fit">f</span>
-                        <div><h4 class="font-bold text-white">Fashion & Gaya Lifestyle</h4><p class="text-xs text-slate-400 mt-1">f1 (Pakaian Tren Mode & Sepatu Estetika), f2 (Skincare Premium & Perawatan).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Fashion & Gaya Lifestyle</h4><p class="text-xs text-slate-400 mt-1">f1 (Pakaian Tren Mode & Sepatu Estetika), f2 (Skincare Premium & Perawatan)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Fashion & Lifestyle</h4><p class="text-xs text-slate-400 mt-1">f1 (Trending Apparel & Aesthetic Shoes), f2 (Premium Skincare & Clinical Treatments)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xl px-4 py-2 rounded-lg h-fit">v</span>
-                        <div><h4 class="font-bold text-white">Vakansi & Traveling</h4><p class="text-xs text-slate-400 mt-1">v1 (Tiket Pesawat & Booking Hotel Wisata), v2 (Operasional Tempat Liburan).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Vakansi & Traveling</h4><p class="text-xs text-slate-400 mt-1">v1 (Tiket Pesawat & Booking Hotel Wisata), v2 (Operasional Tempat Liburan)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Vacation & Traveling</h4><p class="text-xs text-slate-400 mt-1">v1 (Flight Tickets & Holiday Hotel Bookings), v2 (Destination Operational Expenses)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -169,32 +221,40 @@
             <!-- 6. Sosial -->
             <div class="space-y-4">
                 <div class="flex items-center gap-2 text-violet-400 font-bold text-lg">
-                    <span>🟪</span> <h3>6. Master Amplop: Sosial, Spiritual & Giving</h3>
+                    <span>🟪</span> 
+                    <h3 class="lang-id">6. Master Amplop: Sosial, Spiritual & Giving</h3>
+                    <h3 class="lang-en hidden">6. Master Envelope: Social, Spiritual & Giving</h3>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">z</span>
-                        <div><h4 class="font-bold text-white">Zakat & Spiritual</h4><p class="text-xs text-slate-400 mt-1">z1 (Zakat Profesi Bulanan/Maal), z2 (Zakat Fitrah Idul Fitri).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Zakat & Spiritual</h4><p class="text-xs text-slate-400 mt-1">z1 (Zakat Profesi Bulanan/Maal), z2 (Zakat Fitrah Idul Fitri)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Zakat & Spiritual Obligations</h4><p class="text-xs text-slate-400 mt-1">z1 (Monthly Profession/Wealth Zakat), z2 (Eid al-Fitr Food Obligation)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">s</span>
-                        <div><h4 class="font-bold text-white">Sedekah & Infaq</h4><p class="text-xs text-slate-400 mt-1">s1 (Donasi Sukarela/Panti Asuhan), s2 (Tips Apresiasi Driver Ojol/Jalanan).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Sedekah & Infaq</h4><p class="text-xs text-slate-400 mt-1">s1 (Donasi Sukarela/Panti Asuhan), s2 (Tips Apresiasi Driver Ojol/Jalanan)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Charity & Infaq</h4><p class="text-xs text-slate-400 mt-1">s1 (Voluntary Donations/Orphanages), s2 (Appreciation Tips for Drivers/Street Helpers)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">n</span>
-                        <div><h4 class="font-bold text-white">Nikah & Kondangan</h4><p class="text-xs text-slate-400 mt-1">n1 (Sumbangan Hajatan Pernikahan), n2 (Uang Duka Musibah/Melayat).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Nikah & Kondangan</h4><p class="text-xs text-slate-400 mt-1">n1 (Sumbangan Hajatan Pernikahan), n2 (Uang Duka Musibah/Melayat)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Weddings & Social Contributions</h4><p class="text-xs text-slate-400 mt-1">n1 (Wedding Gift Envelopes), n2 (Funeral/Condolence Contributions)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">l</span>
-                        <div><h4 class="font-bold text-white">Lingkungan & Warga</h4><p class="text-xs text-slate-400 mt-1">l1 (Iuran Wajib RT/RW & Sampah), l2 (Partisipasi Kegiatan Sosial Lokal).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Lingkungan & Warga</h4><p class="text-xs text-slate-400 mt-1">l1 (Iuran Wajib RT/RW & Sampah), l2 (Partisipasi Kegiatan Sosial Lokal)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Neighborhood & Community</h4><p class="text-xs text-slate-400 mt-1">l1 (Monthly RT/RW & Waste Fees), l2 (Local Social Event Contributions)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">u</span>
-                        <div><h4 class="font-bold text-white">Keluarga Besar</h4><p class="text-xs text-slate-400 mt-1">u1 (Bakti Transfer Orang Tua/Mertua), u2 (Santunan Berkala Kerabat/Adik).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Keluarga Besar</h4><p class="text-xs text-slate-400 mt-1">u1 (Bakti Transfer Orang Tua/Mertua), u2 (Santunan Berkala Kerabat/Adik)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Extended Family</h4><p class="text-xs text-slate-400 mt-1">u1 (Devotional Transfers to Parents/In-laws), u2 (Periodic Support for Siblings/Relatives)[cite: 1].</p></div>
                     </div>
                     <div class="bg-slate-800/30 border border-slate-800 rounded-xl p-4 flex gap-4">
                         <span class="code-font bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xl px-4 py-2 rounded-lg h-fit">y</span>
-                        <div><h4 class="font-bold text-white">Yayasan & Donasi Tetap</h4><p class="text-xs text-slate-400 mt-1">y1 (Komitmen Terikat Bulanan Donatur Lembaga Sosial).</p></div>
+                        <div class="lang-id"><h4 class="font-bold text-white">Yayasan & Donasi Tetap</h4><p class="text-xs text-slate-400 mt-1">y1 (Komitmen Terikat Bulanan Donatur Lembaga Sosial)[cite: 1].</p></div>
+                        <div class="lang-en hidden"><h4 class="font-bold text-white">Foundations & Fixed Donations</h4><p class="text-xs text-slate-400 mt-1">y1 (Monthly Bound Commitments as Regular Organization Donor)[cite: 1].</p></div>
                     </div>
                 </div>
             </div>
@@ -206,5 +266,30 @@
         </p>
     </main>
 
+    <!-- Language Toggler Logic JS -->
+    <script>
+        function switchLang(lang) {
+            const idElements = document.querySelectorAll('.lang-id');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btnId = document.getElementById('btn-id');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'en') {
+                idElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                
+                // Style updates
+                btnEn.className = "px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-emerald-500 text-slate-950";
+                btnId.className = "px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-800 text-slate-400 hover:text-slate-200";
+            } else {
+                enElements.forEach(el => el.classList.add('hidden'));
+                idElements.forEach(el => el.classList.remove('hidden'));
+                
+                // Style updates
+                btnId.className = "px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-emerald-500 text-slate-950";
+                btnEn.className = "px-3 py-1.5 text-xs font-bold rounded-lg transition-all bg-slate-800 text-slate-400 hover:text-slate-200";
+            }
+        }
+    </script>
 </body>
 </html>
